@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------slideimage-section------------------*/
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper,
+.slide {
+    width: 100%;
+    height: 100%;
+}
+.slide {
+    overflow: hidden;
+}
+.slide,
+.image {
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.325);
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s;
+}
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: 10px;
+    height: 10px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    transform: scale(50%);
+    font-size: 25px;
+    color: #fff;
+}
+.swiper-button-next {
+    display: block;
+}
+.swiper-pagination {
+    display: none;
+}
+
+/*-----------------boxstyle-tags-----------------------*/
+.contain {
+    margin: 0 auto;
+}
+.center {
+    padding: 0 20px;
+    text-align: center;
+}
+/*----------------download-box -------------------*/
+.download-box {
+    position: absolute;
+    padding: 0 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    transition: all 0.3s;
+    top: 40%;
+    left: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+.download-box p button i {
+    width: 10px;
+    height: 10px;
+    color: white;
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+/*-------firstslideimg-box section--------*/
+.dw-box1 h1 {
+    padding: 16px 0;
+    border-bottom: 1px #fff solid;
+    color: rgba(137, 43, 226, 0.8);
+}
+
+.dw-box1 p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 0;
+}
+.dw-box1 p button {
+    color: white;
+    margin-bottom: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: rgba(137, 43, 226, 0.8);
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.dw-box1 p button:hover {
+    background-color: rgb(213, 40, 98);
+    color: black;
+}
+.dw-box1 p button:hover i {
+    color: black;
+}
+.dw-box1:hover {
+    opacity: 1;
+    background-color: black;
+}
+.dw-box1:hover h1 {
+    color: rgb(213, 40, 98);
+}
+
+/*-------secondslideimg-box section--------*/
+
+.dw-box2 h1 {
+    padding: 16px 0;
+    border-bottom: 1px #fff solid;
+    color: rgba(82, 79, 79);
+}
+.dw-box2 p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 0;
+}
+.dw-box2 p button {
+    color: white;
+    margin-bottom: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: rgba(82, 79, 79, 0.8);
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.dw-box2 p button:hover {
+    background-color: rgba(84, 46, 46, 0.838);
+    color: black;
+}
+.dw-box2 p button:hover i {
+    color: black;
+}
+.dw-box2:hover {
+    opacity: 1;
+    background-color: black;
+}
+.dw-box2:hover h1 {
+    color: rgba(84, 46, 46, 0.838);
+}
+
+/*-------thirdslideimg-box section--------*/
+
+.dw-box3 h1 {
+    padding: 16px 0;
+    border-bottom: 1px #fff solid;
+    color: rgb(71, 220, 213, 0.8);
+}
+.dw-box3 p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 0;
+}
+.dw-box3 p button {
+    color: white;
+    margin-bottom: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: rgba(55, 113, 112, 0.8);
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.dw-box3 p button:hover {
+    background-color: rgb(71, 220, 213);
+    color: black;
+}
+.dw-box3 p button:hover i {
+    color: black;
+}
+.dw-box3:hover {
+    opacity: 1;
+    background-color: black;
+}
+.dw-box3:hover h1 {
+    color: rgb(71, 220, 213);
+}
+
+/*------------modal-section-------------*/
+.modal-container {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.3s;
+}
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+    background-color: white;
+    margin: auto;
+    max-width: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.dw_close {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.dw_close i {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.dw_close i:hover {
+    background-color: rgba(128, 128, 128, 0.616);
+}
+.modal p {
+    margin: 10px 0;
+}
+.modal h1 {
+    font-weight: 500;
+}
+.modal p button {
+    border: none;
+    padding: 10px;
+    margin: 8px 0 8px 0;
+    border-radius: 5px;
+    background-color: rgb(236, 0, 0);
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.modal p button:hover {
+    background-color: rgba(128, 128, 128, 0.693);
+    color: black;
+}
+.modal input {
+    width: 50%;
+    border: 1px solid gray;
+    padding: 5px;
+    transition: all 0.7s;
+}
+.modal input:focus {
+    width: 100%;
+}
+/*--------------------dark-light button------------------*/
+.light {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    font-size: 30px;
+    z-index: 100;
+    overflow: hidden;
+    position: fixed;
+    right: 0.2rem;
+}
+.light i {
+    cursor: pointer;
+}
+/* -------------------whybuyit-section---------------------- */
+.whybuy-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.wbbox-1 {
+    width: 90%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+}
+.wbbox-1 h1 {
+    font-size: 45px;
+}
+.wbbox-1 h2 {
+    margin: 16px 0;
+    font-size: 24px;
+    color: blueviolet;
+}
+.wbbox-1 p {
+    font-size: 18px;
+    text-align: justify;
+}
+.wbbox-2 {
+    width: 40%;
+}
+.wbbox-2 img {
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    width: 22vw;
+    height: 60vh;
+    background-position: center;
+    background-size: contain;
+}
+/* -------------------revolution-section---------------------- */
+.revo-box {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 80px auto 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.rvbox-1 {
+    margin-right: 20px;
+    width: 40%;
+}
+.rvbox-1 img {
+    position: relative;
+    float: left;
+    width: 22vw;
+    height: 60vh;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rvbox-2 {
+    width: 90%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+.rvbox-2 h1 {
+    font-size: 45px;
+}
+.rvbox-2 h2 {
+    margin: 16px 0;
+    font-size: 24px;
+    color: rgb(43, 208, 208);
+}
+.rvbox-2 p {
+    font-size: 18px;
+    text-align: justify;
+}
+/* --------------------price-section--------------------- */
+.price-box {
+    margin: 80px auto 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.price-box h1 {
+    font-size: 45px;
+}
+.price-box h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.prc-boxes {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 10px;
+}
+.basic-box {
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.268);
+    background-color: white;
+    transition: all 0.3s;
+}
+.basic-box:hover {
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.268);
+}
+
+.basic-box h2 {
+    font-size: 20px;
+    background-color: gray;
+    margin-top: 0;
+    padding: 20px;
+}
+.basic-box p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px 0;
+}
+.buybtn {
+    padding: 20px 0;
+    border: none;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.buybtn button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.7s;
+}
+.buybtn button i {
+    margin-right: 5px;
+}
+.buybtn button:hover {
+    background-color: rgb(181, 178, 178);
+    color: black;
+}
+.premium-box {
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.268);
+    background-color: white;
+    transition: all 0.3s;
+}
+.premium-box {
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.268);
+    background-color: white;
+}
+.premium-box:hover {
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.268);
+}
+.premium-box h2 {
+    font-size: 20px;
+    background-color: #f44336;
+    margin-top: 0;
+    padding: 20px;
+}
+.premium-box p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px 0;
+}
+.price {
+    font-size: 24px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.588);
+}
+/*--------------------footer-section-------------------*/
+.footer {
+    font-size: 16px;
+    padding: 30px 0;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.footer p {
+    font-weight: 400;
+}
+/* -------------------scroll-effect------------------------ */
+.hidden {
+    transition: all 1s;
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+.logo:nth-child(1) {
+    transition-delay: 100ms;
+}
+.logo:nth-child(2) {
+    transition-delay: 80ms;
+}
+.show {
+    filter: blur(0);
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0);
+    overflow: hidden;
+}
+
+/*--------------------responsive-section-------------------*/
+@media (max-width: 450px) {
+    .prc-boxes {
+        display: block;
+        width: 100%;
+    }
+    .basic-box {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+    .premium-box {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .whybuy-box {
+        display: block;
+    }
+    .wbbox-1 {
+        width: 100%;
+    }
+    .wbbox-2 {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .wbbox-2 img {
+        width: 65%;
+        height: 50%;
+        margin-top: 2 0px;
+    }
+    .revo-box {
+        display: block;
+        margin: 80px auto 0 auto;
+    }
+    .rvbox-2 {
+        width: 100%;
+    }
+
+    .rvbox-1 {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .rvbox-1 img {
+        width: 65%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .main {
+        width: 100%;
+        height: 60vh;
+    }
+    .dw-box1 {
+        width: 80%;
+        justify-content: center;
+    }
+}
+@media (max-width: 490px) {
+    .swiper-button-next {
+        display: none;
+        opacity: 0;
+    }
+    .swiper-pagination {
+        display: block;
+    }
+}

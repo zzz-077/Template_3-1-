@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- w3-icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="swiper-bundle.min.css" />
+    </head>
+    <body>
+        <!----------------slideimage-section----------------->
+        <section class="main swiper mySwiper">
+            <!---------------dark-light button---------------->
+            <div class="light">
+                <i class="fa fa-moon-o" id="togglebutton"></i>
+            </div>
+            <div class="wrapper swiper-wrapper">
+                <!------firstslidebox------>
+                <div class="slide swiper-slide">
+                    <div class="contain center" style="max-width: 1400px">
+                        <div class="download-box dw-box1 contain">
+                            <h1>Play lots of Games</h1>
+                            <p>Enjoy with high quality</p>
+                            <p>
+                                <button id="open">
+                                    Download
+                                    <i class="fa fa-android"></i>
+                                    <i class="fa fa-apple"></i>
+                                    <i class="fa fa-windows"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <img class="image" src="img/mainimg1.jpg" alt="" />
+                </div>
+                <!------secondslidebox------>
+                <div class="slide swiper-slide">
+                    <div class="contain center" style="max-width: 1440px">
+                        <div class="download-box dw-box2 contain">
+                            <h1>Smart & New Design</h1>
+
+                            <p>Customize photos as you go</p>
+                            <p>
+                                <button id="open1">
+                                    Download
+                                    <i class="fa fa-android"></i>
+                                    <i class="fa fa-apple"></i>
+                                    <i class="fa fa-windows"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="image" src="img/mainimg2.jpg" alt="" />
+                </div>
+                <!------thirdslidebox ------>
+                <div class="slide swiper-slide">
+                    <div class="contain center" style="max-width: 1440px">
+                        <div class="download-box dw-box3 contain">
+                            <h1>CLICK! Fast and Easy</h1>
+
+                            <p>Chose from thousands of features</p>
+                            <p>
+                                <button id="open2">
+                                    Download
+                                    <i class="fa fa-android"></i>
+                                    <i class="fa fa-apple"></i>
+                                    <i class="fa fa-windows"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="image" src="img/mainimg3.jpg" alt="" />
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!----------------modal-section---------------------->
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <div class="dw_close">
+                    <h1>DOWNLOAD</h1>
+                    <i id="close" class="fa fa-remove"></i>
+                </div>
+                <p>
+                    Download the app in AppStore, Google Play or Microsoft
+                    Store.
+                </p>
+                <p>
+                    <i class="fa fa-android"></i>
+                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-windows"></i>
+                </p>
+                <input type="text" placeholder="Enter e-mail" />
+                <p>
+                    <button>Download Free</button>
+                </p>
+            </div>
+        </div>
+        <!----------------text-section----------------------->
+        <div class="contain center" style="max-width: 1440px">
+            <!-----whybuyit-section----->
+            <div class="whybuy-box hidden">
+                <div class="wbbox-1">
+                    <h1>The App</h1>
+                    <h2>Why buy it?</h2>
+                    <p>
+                        Computers increase your productivity and, with a good
+                        understanding of the software running on them, you
+                        become more productive at everything you do. For
+                        example, once you have a basic understanding of using a
+                        word processor, you can create, store, edit, share, and
+                        print documents and letters.
+                    </p>
+                </div>
+                <div class="wbbox-2">
+                    <img src="img/wbimg.jpg" alt="#" />
+                </div>
+            </div>
+            <!-----revolution-section----->
+            <div class="revo-box hidden">
+                <div class="rvbox-1">
+                    <img src="img/spashimage.jpg" alt="" />
+                </div>
+                <div class="rvbox-2">
+                    <h1>Clarity</h1>
+                    <h2>PC Revolution</h2>
+                    <p>
+                        The Digital Revolution (also known as the Third
+                        Industrial Revolution) is the shift from mechanical and
+                        analogue electronic technology to digital electronics
+                        which began in the later half of the 20th century, with
+                        the adoption and proliferation of digital computers and
+                        digital record-keeping, that continues to the
+                    </p>
+                </div>
+            </div>
+            <!-----price-section----->
+            <div class="price-box hidden">
+                <h1>Pricing</h1>
+                <h2>Choose a pricing plan that fits your needs.</h2>
+                <div class="prc-boxes">
+                    <div class="basic-box logo hidden">
+                        <h2>Basic</h2>
+                        <p><strong>250GB </strong>SSD</p>
+                        <p><strong>10 </strong>Features</p>
+                        <p><strong>No </strong>Ads</p>
+                        <p><strong>Office </strong>Support</p>
+                        <p class="price">25$</p>
+                        <p class="buybtn">
+                            <button><i class="fa fa-download"></i>Buy</button>
+                        </p>
+                    </div>
+                    <div class="premium-box logo hidden">
+                        <h2>Premium</h2>
+                        <p><strong>1TB </strong>SSD</p>
+                        <p><strong>50 </strong>Features</p>
+                        <p><strong>No </strong>Ads</p>
+                        <p><strong>Endless </strong>Support</p>
+                        <p class="price">99$</p>
+                        <p class="buybtn">
+                            <button><i class="fa fa-download"></i>Buy</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-----footer-section----->
+        <div class="footer center hidden">
+            <p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkdin"></i>
+            </p>
+            <p>Created by <strong>zzz-077</strong></p>
+        </div>
+
+        <!----------------script-section--------------------->
+        <script src="app.js" defer></script>
+        <script src="swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 1,
+
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        </script>
+    </body>
+</html>
